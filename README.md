@@ -6,18 +6,16 @@ This script sets up file associations for [mpv][1] on Windows.
 How to install
 --------------
 
-1. Make sure you have the latest build of mpv. Official builds are here:
-   https://mpv.srsfckn.biz/
-2. Download the zip: https://github.com/rossy/mpv-install/archive/master.zip
-   <br>
-   **Note:** Make sure you use the above link. Don't use GitHub's "Raw" links
-   on the files themselves, since these have incorrect line-endings, which
-   cause the script to crash. (See [#7][2].)
-3. Copy the .bat files and the .ico to the same directory as mpv.exe
-4. Run ``mpv-install.bat`` as administrator. **Note:** For an unattended
-   install, use the ``/u`` switch.
-5. Use the _Default Programs_ and _AutoPlay_ control panels to make mpv the
-   default player
+```
+scoop install sudo mpv
+cd ~\scoop\persist\mpv
+git clone https://github.com/koyokr/mpv-install-for-scoop mpv-install
+cd mpv-install
+sudo .\mpv-install.bat
+```
+
+1. On the **Start** menu, select **Settings** > **Apps** > **Default apps**.
+2. Select **Video player**, and then choose **mpv**.
 
 What it does
 ------------
