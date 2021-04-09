@@ -16,7 +16,7 @@ call :ensure_admin
 set mpv_args=
 
 :: Get mpv.exe location
-set mpv_path=%~dp0mpv.exe
+set mpv_path=%userprofile%\scoop\apps\mpv\current\mpv.exe
 if not exist "%mpv_path%" call :die "mpv.exe not found"
 
 :: Get mpv-document.ico location
